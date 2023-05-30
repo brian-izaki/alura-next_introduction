@@ -1,9 +1,9 @@
 import Link from "../src/components/LInk";
 
-export default function FaqPage() {
+export default function NotFoundPage() {
     return (
         <div>
-            <h1>Alura Cases - Página de perguntas FAQ</h1>
+            <h1>Erro 404 - página não encontrada</h1>
             <Link href="/">
                 Ir para o Home
             </Link>
