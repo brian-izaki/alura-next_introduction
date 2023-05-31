@@ -62,6 +62,20 @@ Temas centrais abordados no projeto
 
 </details>
 
+### Build
+
+<details>
+<summary>Detalhes</summary>
+
+- Por default, o build do next irá gerar arquivos estáticos
+- utilize o comando `yarn export` para gerar os arquivos
+  - é uma abordagem que poderia armazenar em buckets no S3 da aws ou outros servidores
+- [referecncia doc](https://nextjs.org/docs/app/api-reference/next-cli#production)
+
+---
+
+</details>
+
 ---
 
 ## Referências
