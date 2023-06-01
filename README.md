@@ -76,6 +76,34 @@ Temas centrais abordados no projeto
 
 </details>
 
+### CSS-in-JS no Next
+
+<details>
+<summary>Detalhes</summary>
+
+- é o CSS sendo usado no JS dentro de cada componente.
+- o Next tem uma abordagem expecífica pra estilização no componente,
+  - dentro do próprio componente utiliza o seguinte código:
+    ```jsx
+    // ... código do componente
+    return (
+      <h1>Título</h1>
+      <style jsx>{`
+        h1 {
+          color: red;
+        }
+      `}</style>
+    )
+    // ... código do componente
+    ```
+  - [referencia doc](https://nextjs.org/docs/app/building-your-application/styling/css-in-js)
+<!-- - **Estilização global:**
+  ```jsx
+  ``` -->
+---
+
+</details>
+
 ---
 
 ## Referências
