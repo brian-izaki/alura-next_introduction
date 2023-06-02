@@ -96,10 +96,22 @@ Temas centrais abordados no projeto
     )
     // ... código do componente
     ```
-  - [referencia doc](https://nextjs.org/docs/app/building-your-application/styling/css-in-js)
-<!-- - **Estilização global:**
-  ```jsx
-  ``` -->
+- **Estilização global:**
+  - na tag style é necessário adicionar o atributo `global`
+
+- [ref doc styles](https://nextjs.org/docs/pages/building-your-application/styling/css-in-js)
+---
+
+</details>
+
+### Middleware das páginas
+
+<details>
+<summary>Detalhes</summary>
+
+- [_app.js](./pages/_app.js) é o arquivo 'especial' do Next para o middleware das páginas da aplicação, ou seja, se aplicar algo ali, irá aparecer para todas as outras páginas
+  - bom para estilos globais, configs globais, etc.
+- [ref doc](https://nextjs.org/docs/pages/building-your-application/routing/custom-app)
 ---
 
 </details>
