@@ -1,31 +1,35 @@
-import React from 'react'
-import Link from "../src/components/LInk";
+import HomeScreen from '../src/screens/HomeScreen';
 
-function Title({ children, as }) {
-    // `as` é uma prop para permitir um atributo dinâmico
-    const Tag = as;
-    return (
-        <React.Fragment>
-            <Tag>
-                {children}
-            </Tag>
+export default HomeScreen;
 
-            <style jsx>{`
-                ${Tag} {
-                    color: red;
-                }
-            `}</style>
-        </React.Fragment>
-    )
-}
+// import React from 'react'
+// import Link from "../src/components/LInk";
 
-export default function HomePage() {
-    return (
-        <div>
-            <Title as="h1">Alura Cases - Home</Title>
-            <Link href="/faq">
-                Ir para o FAQ
-            </Link>
-        </div>
-    )
-}
+// function Title({ children, as }) {
+//     // `as` é uma prop para permitir um atributo dinâmico
+//     const Tag = as;
+//     return (
+//         <React.Fragment>
+//             <Tag>
+//                 {children}
+//             </Tag>
+
+//             <style jsx>{`
+//                 ${Tag} {
+//                     color: red;
+//                 }
+//             `}</style>
+//         </React.Fragment>
+//     )
+// }
+
+// export default function HomePage() {
+//     return (
+//         <div>
+//             <Title as="h1">Alura Cases - Home</Title>
+//             <Link href="/faq">
+//                 Ir para o FAQ
+//             </Link>
+//         </div>
+//     )
+// }

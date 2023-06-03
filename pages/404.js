@@ -1,4 +1,4 @@
-import Link from "../src/components/LInk";
+import Link from "../src/components/Link";
 
 export default function NotFoundPage() {
     return (
