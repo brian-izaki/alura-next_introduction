@@ -3,7 +3,7 @@ import HomeScreen from '../src/screens/HomeScreen';
 export default HomeScreen;
 
 // import React from 'react'
-// import Link from "../src/components/LInk";
+// import Link from "../src/components/Link";
 
 // function Title({ children, as }) {
 //     // `as` é uma prop para permitir um atributo dinâmico
