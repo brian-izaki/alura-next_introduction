@@ -32,7 +32,18 @@ Temas centrais abordados no projeto
 - Criação de componentes
   - o ideal, é criar um diretório src (que é seu) e criar componentes (que são isolados) dentro dele.
   - Dentro do diretório `pages` ficariam apenas as páginas do site, pois é um diretório do próprio Next.
-
+- diretório [screens](src/screens/)
+  - responsável por ter os "pedaços" de componentes a serem utilizados nos arquivos do diretório `pages`
+- diretório [components](src/components)
+  - [patterns](src/components/patterns)
+    - O nome é uma convenção utilizada pelo instrutor (Mario souto).
+    - Nele ficam os componentes mais complexos do layout. ex: Header, Footer, etc.
+- diretório [theme](src/theme)
+  - [theme.js](src/theme/theme.js)
+    - são as estilizações que os designers passam para utilizar no sistema (configs que estão no figma, adobe XD, etc).
+    - nele terá estilizações de fontes, paleta de cores, tamanhos de responsividade, etc.
+  - [components.js](src/theme/components.js)
+    - são os componentes preparados com as estilizações. (prontos para uso)
 ---
 
 </details>
@@ -82,6 +93,8 @@ Temas centrais abordados no projeto
 <summary>Detalhes</summary>
 
 - é o CSS sendo usado no JS dentro de cada componente.
+- a convenção dessa forma é utilizar os valores dos atributos css com valores de propriedades.
+  - ex: `color: themeColor.red`, onde `themeColor` é um objeto com a propriedade `red`, que por sua vez possui uma string `#912`
 - o Next tem uma abordagem expecífica pra estilização no componente,
   - dentro do próprio componente utiliza o seguinte código:
     ```jsx
@@ -122,3 +135,4 @@ Temas centrais abordados no projeto
 
 - [curso da alura](https://cursos.alura.com.br/course/next-js-iniciando-framework)
 - [documentação do Next.js](https://nextjs.org/docs)
+- [Abordagem CSS: utility-first](https://blog.codecasts.com.br/conhecendo-css-utility-first-com-tailwind-css-55f81b65f9e4#:~:text=O%20que%20voc%C3%AA%20precisa%20apreender,seus%20elementos%20usando%20essas%20classes.)
