@@ -136,3 +136,6 @@ Temas centrais abordados no projeto
 - [curso da alura](https://cursos.alura.com.br/course/next-js-iniciando-framework)
 - [documentação do Next.js](https://nextjs.org/docs)
 - [Abordagem CSS: utility-first](https://blog.codecasts.com.br/conhecendo-css-utility-first-com-tailwind-css-55f81b65f9e4#:~:text=O%20que%20voc%C3%AA%20precisa%20apreender,seus%20elementos%20usando%20essas%20classes.)
+  - libs que usam essa abordagem:
+    - [xtyled](https://xstyled.dev/)
+    - [tailwindCss](https://tailwindcss.com/)
