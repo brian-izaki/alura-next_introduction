@@ -38,12 +38,14 @@ Temas centrais abordados no projeto
   - [patterns](src/components/patterns)
     - O nome é uma convenção utilizada pelo instrutor (Mario souto).
     - Nele ficam os componentes mais complexos do layout. ex: Header, Footer, etc.
+    - São componentes que seriam junções de outros componentes em um único componente.
 - diretório [theme](src/theme)
   - [theme.js](src/theme/theme.js)
     - são as estilizações que os designers passam para utilizar no sistema (configs que estão no figma, adobe XD, etc).
     - nele terá estilizações de fontes, paleta de cores, tamanhos de responsividade, etc.
   - [components.js](src/theme/components.js)
     - são os componentes preparados com as estilizações. (prontos para uso)
+    - são os componentes mais simples.
 ---
 
 </details>
@@ -139,3 +141,7 @@ Temas centrais abordados no projeto
   - libs que usam essa abordagem:
     - [xtyled](https://xstyled.dev/)
     - [tailwindCss](https://tailwindcss.com/)
+- Estrutura de projeto
+  - [intro para estruturar projeto frontend](https://youtu.be/mJK5oGixSYo)
+  - O livro domain-driven-design
+  - [design systems](https://github.com/alexpate/awesome-design-systems)
