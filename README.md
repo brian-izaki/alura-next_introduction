@@ -131,6 +131,16 @@ Temas centrais abordados no projeto
 
 </details>
 
+### Arquivos estáticos
+
+<details>
+<summary>Detalhes</summary>
+
+- Apenas colocar em um diretório [`public`](public) que o arquivo irá ficar disponível pro navegador, podendo ser acessado da seguinte maneira: `url_site/nome_arquivo`
+---
+
+</details>
+
 ---
 
 ## Referências
