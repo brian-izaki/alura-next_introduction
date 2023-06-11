@@ -6,7 +6,13 @@ Projeto básico com 2 páginas estáticas utilizando o framework Next.js
 
 - [Iniciar projeto](#iniciar-projeto)
 - [Conteúdos](#conteúdos)
+  - [Estrutura do projeto](#estrutura-pro-projeto)
   - [Roteamento](#roteamento)
+  - [Navegação estilo SPA](#navegação-estilo-spa)
+  - [Build](#build)
+  - [CSS-in-JS no Next](#css-in-js-no-next)
+  - [Middleware das páginas](#middleware-das-páginas)
+  - [Arquivos estáticos](#arquivos-estáticos)
 - [Referências](#referências)
 
 ---
@@ -46,10 +52,29 @@ Temas centrais abordados no projeto
   - [components.js](src/theme/components.js)
     - são os componentes preparados com as estilizações. (prontos para uso)
     - são os componentes mais simples.
+
 ---
 
 </details>
 
+### Next.js
+
+<details>
+<summary>Detalhes</summary>
+
+- APIs principais
+  - `getStaticProps()`: é executado apenas no lado do servidor e o retorno dele preenche o `props` do componente.
+    - Os dados que são montados por ele, ocorrem por default quando realizar o build da aplicação, e depois do build não executará mais o código.
+    - para rodar o build dele, pode rodar o build e depois o export (geração de sites estáticos - SSG)
+    - [mais detalhes](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props#when-does-getstaticprops-run)
+  - `getServerSideProps()`: mesma coisa que o `getStaticProps` com algumas diferenças:
+    - mesmo depois do build ele será executado sempre que o usuário acessar o componente em questão.
+    - para rodar o build dele, precisa fazer o build e depois start no build (sites no servidor - SSR)
+    - [mais detalhes](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)
+
+---
+
+</details>
 
 ### Roteamento
 
@@ -112,9 +137,11 @@ Temas centrais abordados no projeto
     // ... código do componente
     ```
 - **Estilização global:**
+
   - na tag style é necessário adicionar o atributo `global`
 
 - [ref doc styles](https://nextjs.org/docs/pages/building-your-application/styling/css-in-js)
+
 ---
 
 </details>
@@ -124,9 +151,10 @@ Temas centrais abordados no projeto
 <details>
 <summary>Detalhes</summary>
 
-- [_app.js](./pages/_app.js) é o arquivo 'especial' do Next para o middleware das páginas da aplicação, ou seja, se aplicar algo ali, irá aparecer para todas as outras páginas
+- [\_app.js](./pages/_app.js) é o arquivo 'especial' do Next para o middleware das páginas da aplicação, ou seja, se aplicar algo ali, irá aparecer para todas as outras páginas
   - bom para estilos globais, configs globais, etc.
 - [ref doc](https://nextjs.org/docs/pages/building-your-application/routing/custom-app)
+
 ---
 
 </details>
@@ -137,6 +165,7 @@ Temas centrais abordados no projeto
 <summary>Detalhes</summary>
 
 - Apenas colocar em um diretório [`public`](public) que o arquivo irá ficar disponível pro navegador, podendo ser acessado da seguinte maneira: `url_site/nome_arquivo`
+
 ---
 
 </details>
@@ -155,3 +184,5 @@ Temas centrais abordados no projeto
   - [intro para estruturar projeto frontend](https://youtu.be/mJK5oGixSYo)
   - O livro domain-driven-design
   - [design systems](https://github.com/alexpate/awesome-design-systems)
+- Next.js
+  - [doc `getStaticProps`](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props)
