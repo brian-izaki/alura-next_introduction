@@ -63,6 +63,7 @@ Temas centrais abordados no projeto
 <summary>Detalhes</summary>
 
 - APIs principais
+
   - `getStaticProps()`: é executado apenas no lado do servidor e o retorno dele preenche o `props` do componente.
     - Os dados que são montados por ele, ocorrem por default quando realizar o build da aplicação, e depois do build não executará mais o código.
     - para rodar o build dele, pode rodar o build e depois o export (geração de sites estáticos - SSG)
@@ -71,6 +72,9 @@ Temas centrais abordados no projeto
     - mesmo depois do build ele será executado sempre que o usuário acessar o componente em questão.
     - para rodar o build dele, precisa fazer o build e depois start no build (sites no servidor - SSR)
     - [mais detalhes](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)
+
+- Componentes principais
+  - `Head`: usado para representar a tag `head` do html (onde ficam link do css, metadados da página, título da página, etc)
 
 ---
 

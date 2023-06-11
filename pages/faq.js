@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+import Head from "next/head";
 import Link from "../src/components/Link";
 
 // export async function getServerSideProps() {
@@ -31,6 +32,10 @@ export default function FaqPage({ faq }) {
 
     return (
         <div>
+            <Head>
+                <title>Home - Alura Cases Campanha</title>
+            </Head>
+
             <h1>Alura Cases - Página de perguntas FAQ</h1>
             <Link href="/">
                 Ir para o Home
