@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
-import Head from "next/head";
 import Link from "../src/components/Link";
+import PageTitle from "../src/components/PageTitle";
 
 // export async function getServerSideProps() {
 export async function getStaticProps() {
@@ -32,9 +32,7 @@ export default function FaqPage({ faq }) {
 
     return (
         <div>
-            <Head>
-                <title>Home - Alura Cases Campanha</title>
-            </Head>
+            <PageTitle title="FAQ - Alura Cases Campanha" />
 
             <h1>Alura Cases - Página de perguntas FAQ</h1>
             <Link href="/">
