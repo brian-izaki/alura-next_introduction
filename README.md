@@ -30,6 +30,8 @@ Projeto básico com 2 páginas estáticas utilizando o framework Next.js
 
 Temas centrais abordados no projeto
 
+<br/>
+
 ### Estrutura pro projeto
 
 <details>
@@ -57,6 +59,8 @@ Temas centrais abordados no projeto
 
 </details>
 
+<br/>
+
 ### Next.js
 
 <details>
@@ -76,9 +80,18 @@ Temas centrais abordados no projeto
 - Componentes principais
   - `Head`: usado para representar a tag `head` do html (onde ficam link do css, metadados da página, título da página, etc)
 
+- configs do Next
+  - config fica no next.config.js
+  - **trailing slash**: é a barra no final de uma URL. Ex: /about<span style="color: green;">/</span>
+    - é bom pra quem trabalha com o google analítics, pois eles precisam dessa barra no final.
+  - **redirects**: redirecionamento para outra url quando tenta acessar uma url
+  - [refs](#referências)
+
 ---
 
 </details>
+
+<br/>
 
 ### Roteamento
 
@@ -92,6 +105,8 @@ Temas centrais abordados no projeto
 
 </details>
 
+<br/>
+
 ### Navegação estilo SPA
 
 <details>
@@ -103,6 +118,8 @@ Temas centrais abordados no projeto
 ---
 
 </details>
+
+<br/>
 
 ### Build
 
@@ -117,6 +134,8 @@ Temas centrais abordados no projeto
 ---
 
 </details>
+
+<br/>
 
 ### CSS-in-JS no Next
 
@@ -150,6 +169,8 @@ Temas centrais abordados no projeto
 
 </details>
 
+<br/>
+
 ### Middleware das páginas
 
 <details>
@@ -162,6 +183,8 @@ Temas centrais abordados no projeto
 ---
 
 </details>
+
+<br/>
 
 ### Arquivos estáticos
 
@@ -190,3 +213,6 @@ Temas centrais abordados no projeto
   - [design systems](https://github.com/alexpate/awesome-design-systems)
 - Next.js
   - [doc `getStaticProps`](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props)
+  - [doc configurações](https://nextjs.org/docs/app/api-reference/next-config-js)
+    - [redirects](https://nextjs.org/docs/app/api-reference/next-config-js/redirects)
+    - [trailing slash](https://nextjs.org/docs/app/api-reference/next-config-js/trailingSlash)
