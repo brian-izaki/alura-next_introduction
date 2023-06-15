@@ -1,6 +1,6 @@
-// import { useEffect, useState } from "react";
-import Link from "../src/components/Link";
-import PageTitle from "../src/components/PageTitle";
+import FAQScreen from "../src/screens/FAQScreen";
+
+export default FAQScreen;
 
 // export async function getServerSideProps() {
 export async function getStaticProps() {
@@ -16,39 +16,4 @@ export async function getStaticProps() {
             faq,
         },
     }
-}
-
-export default function FaqPage({ faq }) {
-    // const [faq, setFaq] = useState([]);
-
-    // useEffect(() => {
-    //     const FAQ_API_URL = 'https://gist.githubusercontent.com/omariosouto/0ceab54bdd8182cbd1a4549d32945c1a/raw/578ad1e8e5296fa048e3e7ff6b317f7497b31ad9/alura-cases-faq.json'
-    //     fetch(FAQ_API_URL)
-    //         .then(res => res.json())
-    //         .then(res => {
-    //             setFaq(res)
-    //         })
-    // }, [])
-
-    return (
-        <div>
-            <PageTitle title="FAQ - Alura Cases Campanha" />
-
-            <h1>Alura Cases - Página de perguntas FAQ</h1>
-            <Link href="/">
-                Ir para o Home
-            </Link>
-
-            <ul>
-                {faq.map(({ question, answer }) => (
-                    <li key={question}>
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
 }
