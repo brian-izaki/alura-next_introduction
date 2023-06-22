@@ -69,12 +69,13 @@ Temas centrais abordados no projeto
 - APIs principais
 
   - `getStaticProps()`: é executado apenas no lado do servidor e o retorno dele preenche o `props` do componente.
-    - Os dados que são montados por ele, ocorrem por default quando realizar o build da aplicação, e depois do build não executará mais o código.
-    - para rodar o build dele, pode rodar o build e depois o export (geração de sites estáticos - SSG)
+    - Os dados que são montados por ele, ocorrem por default quando realizar o build da aplicação, e depois do build a aplicação não executará mais o código.
+    - para verificar, execute o `build` e depois o `start` ou `export` (geração de sites estáticos - SSG)
     - [mais detalhes](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-props#when-does-getstaticprops-run)
   - `getServerSideProps()`: mesma coisa que o `getStaticProps` com algumas diferenças:
-    - mesmo depois do build ele será executado sempre que o usuário acessar o componente em questão.
-    - para rodar o build dele, precisa fazer o build e depois start no build (sites no servidor - SSR)
+    - mesmo depois do build a aplicação irá executar o código dentro dele sempre que o usuário acessar o componente.
+    - para verificar, precisa fazer o `build` e depois `start` no build (sites no servidor - SSR)
+      - obs: o `export` é só pra SSG.
     - [mais detalhes](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)
 
 - Componentes principais

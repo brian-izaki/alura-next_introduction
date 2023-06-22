@@ -1,5 +1,6 @@
 import Link from "../src/components/Link"
 
+// consegue perceber a velocidade de performance apenas no build.
 export async function getStaticProps() {
     await new Promise(resolve => setTimeout(() => resolve(), 1000));
 
